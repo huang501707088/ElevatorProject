@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hdos.elevatorproject.button.ConfirmRescueActivity" 
+    android:background="@drawable/confirm_rescue_new">
+
+    <TextView
+        android:id="@+id/tvCountDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:textColor="#FF0000"
+        android:textSize="80px" />
+     <SurfaceView
+        android:id="@+id/back_surfaceview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        />
+
+</RelativeLayout>

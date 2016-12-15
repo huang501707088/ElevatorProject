@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电梯救援监控</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_rescue">RescueActivity</string>
+    <string name="title_activity_file">FileActivity</string>
+    <string name="title_activity_trans">TransActivity</string>
+    <string name="title_activity_countdown">CountdownActivity</string>
+    <string name="title_activity_trigger_rescue">TriggerRescueActivity</string>
+    <string name="title_activity_confirm_rescue">ConfirmRescueActivity</string>
+    <string name="title_activity_monitor">MonitorActivity</string>
+    <string name="title_activity_remote_camera">RemoteCameraActivity</string>
+    <string name="title_activity_remote_check">RemoteCheckActivity</string>
+    <string name="title_activity_remote_commun">RemoteCommunActivity</string>
+
+</resources>

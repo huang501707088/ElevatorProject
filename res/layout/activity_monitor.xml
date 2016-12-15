@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hdos.terminalmonitor.MainActivity" >
+
+      <TextView
+        android:id="@+id/etCPUNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/main_activity_lefttop_marginLeft"
+        android:layout_marginTop="@dimen/main_activity_lefttop_marginTop"
+        android:textSize="@dimen/main_activity_textsize" />
+    
+    <TextView
+        android:id="@+id/etTerminalNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCPUNo"
+        android:layout_below="@+id/etCPUNo"
+        android:layout_marginTop="@dimen/main_activity_each_marginTop"
+        android:textSize="@dimen/main_activity_textsize"/>
+
+    <TextView
+        android:id="@+id/etElevatorRegiNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etTerminalNo"
+        android:layout_below="@+id/etTerminalNo"
+        android:layout_marginTop="@dimen/main_activity_each_marginTop"
+        android:textSize="@dimen/main_activity_textsize"/>
+
+    <TextView
+        android:id="@+id/etRFIDNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etElevatorRegiNo"
+        android:layout_below="@+id/etElevatorRegiNo"
+        android:layout_marginTop="@dimen/main_activity_each_marginTop"
+        android:textSize="@dimen/main_activity_textsize" />
+
+    <TextView
+        android:id="@+id/etLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etRFIDNo"
+        android:layout_below="@+id/etRFIDNo"
+        android:layout_marginTop="@dimen/main_activity_each_marginTop"
+        android:textSize="@dimen/main_activity_textsize"/>
+
+    <TextView
+        android:id="@+id/etNFCCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etCPUNo"
+        android:layout_alignBottom="@+id/etCPUNo"
+        android:layout_alignLeft="@+id/etCPUNo"
+        android:layout_marginLeft="@dimen/main_activity_righttop_marginLeft"
+        android:textSize="@dimen/main_activity_textsize"/>
+      <TextView
+        android:id="@+id/etInstallFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etTerminalNo"
+        android:layout_alignLeft="@+id/etNFCCode"
+               android:layout_marginTop="@dimen/main_activity_each_marginTop"
+        android:textSize="@dimen/main_activity_textsize"/>
+
+      <TextView
+        android:id="@+id/etRescueNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etElevatorRegiNo"
+        android:layout_alignLeft="@+id/etNFCCode"
+        android:layout_marginTop="@dimen/main_activity_each_marginTop"
+        android:textSize="@dimen/main_activity_textsize"/>
+      
+      <TextView
+        android:id="@+id/etBarcodeNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etRFIDNo"
+        android:layout_alignLeft="@+id/etNFCCode"
+        android:layout_marginTop="@dimen/main_activity_each_marginTop"
+        android:textSize="@dimen/main_activity_textsize"/>
+    <TextView
+        android:id="@+id/etLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etLongitude"
+        android:layout_alignBottom="@+id/etLongitude"
+        android:layout_alignLeft="@+id/etNFCCode"
+        android:textSize="@dimen/main_activity_textsize" />
+
+  <!--         <TextView
+        android:id="@+id/etCPUNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="102dp"
+        android:text="@string/hello_world" /> -->
+
+	
+        <Button
+            android:id="@+id/btnSynchronizeDeviceInformation"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="500dp"
+            android:background="#c29d69"
+            android:onClick="btnSynchronizeDeviceInformation"
+            android:text="更新同步数据"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/btnSynchronizeDeviceInformation"
+            android:layout_alignBottom="@+id/btnSynchronizeDeviceInformation"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="550dp"
+            android:background="#c29d69"
+            android:onClick="btnTest"
+            android:text="测试紧急救援"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+        
+        <TextView 
+            android:id="@+id/tv_lift_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安装地址:"
+            android:textSize="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="300dp"
+            android:layout_marginLeft="58dp"
+            android:textColor="#ffffff"/>
+        
+         <TextView 
+            android:id="@+id/tv_lift_address_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_lift_address"
+            android:textColor="#ffffff"/>
+         
+          <TextView 
+            android:id="@+id/tv_lift_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP版本号 :"
+            android:textSize="44dp"
+            android:layout_marginLeft="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="220dp"
+            android:textColor="#ffffff"/>
+        
+         <TextView 
+            android:id="@+id/tv_lift_version_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="220dp"
+            android:layout_toRightOf="@+id/tv_lift_address"
+            android:layout_marginLeft="50dp"
+            android:textColor="#ffffff"/>
+
+
+        <ImageView
+               android:id="@+id/ivQRCode"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="170dp" />
+
+</RelativeLayout>

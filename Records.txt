@@ -1,0 +1,23 @@
+@SuppressWarnings("deprecation")?
+TransferFile to an Empty User
+
+
+
+The control Center logout themselves
+final?
+
+1.服务器连接：
+	失败
+	超时
+2.登录
+3.进入房间
+
+Situations Need to be Tested:
+1.File Transfer --Timeout
+                --To an Empty User
+                --no File fail
+2.2 tries after 9000 ----In 7. c)
+3.Enter new Room After 9000 ----In 8. c)
+
+To Add list:
+1.30 seconds countdown;

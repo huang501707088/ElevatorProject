@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.hdos.elevatorproject.RescueActivity"
+    android:background="@drawable/backgroundcolor_rescue" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+            	<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_alignParentTop="true"
+				    android:gravity="center"
+				    android:text="话务员视频"
+				    android:textColor="#FFFFFF"
+				    android:textSize="60px" 
+				    android:paddingTop="30px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </LinearLayout>
+
+            <RelativeLayout 
+                android:layout_width="0dip"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:id="@+id/lo_VideoAndRemoteSV">
+                  <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4" 
+                android:layout_alignParentRight="true"/>
+                
+
+                    <SurfaceView
+                        android:id="@+id/remoteSV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                      />
+              
+            </RelativeLayout>
+          
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+               	<TextView
+				    android:id="@+id/videoMsg"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_alignParentTop="true"
+				    android:gravity="center"
+				    android:text="show"
+				    android:textColor="#FFFFFF"
+				    android:textSize="50px" 
+				    android:paddingTop="30px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+               		<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_alignParentTop="true"
+				    android:gravity="center"
+				    android:text="电梯视频"
+				    android:textColor="#FFFFFF"
+				    android:textSize="60px" 
+				    android:paddingTop="30px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4" >
+
+                <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <SurfaceView
+                        android:id="@+id/remoteSV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout> -->
+
+			
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true">
+
+                <!--     android:layout_width="240px"
+                        android:layout_height="320px"  -->
+                    <SurfaceView
+                        android:id="@+id/localSV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+             <!--    	<TextView
+				    android:id="@+id/videoMsg"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_alignParentTop="true"
+				    android:gravity="center"
+				    android:text="show"
+				    android:textColor="#FFFFFF"
+				    android:textSize="50px" 
+				    android:paddingTop="30px"/> -->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
